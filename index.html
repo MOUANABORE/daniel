@@ -885,21 +885,7 @@
   </script>
 
   <script>
-  // Notification de visite via Formspree
-  fetch('https://formspree.io/ai', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-      _subject: '🔔 Nouvelle visite sur votre portfolio',
-      message: 'Quelqu\'un vient de consulter votre portfolio.',
-      page: window.location.href,
-      referrer: document.referrer || 'Direct',
-      date: new Date().toLocaleString('fr-FR')
-    })
-  }).catch(error => console.error('Erreur de notification:', error));
+  
 </script>
 
 </body>
